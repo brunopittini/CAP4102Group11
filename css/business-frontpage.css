@@ -22,3 +22,10 @@ body {
 .card {
   height: 100%;
 }
+
+#valueForm{
+	border-radius: 25px;
+    border: 2px solid grey;
+    padding: 20px; 
+    
+}
