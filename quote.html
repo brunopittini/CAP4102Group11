@@ -78,64 +78,65 @@
 
       <form action="scripts/quote_form.php" id="quoteForm" method="POST">
         <div class="messages"></div>
-        <div class="form-group">
-          <label for="year">Vehicle Year: </label>
-          <input type="text" class="form-control" id="year" name="vehicleYear">
-          <div class="help-block with-errors"></div>
-        </div>
-        
-        <div class="form-group">
-          <label for="make">Vehicle Make: </label>
-          <input type="text" class="form-control" id="make" name="make">
-          <div class="help-block with-errors"></div>
-        </div>
-
-        <div class="form-group">
-          <label for="model">Vehicle Model: </label>
-          <input type="text" class="form-control" id="model" name="model">
-          <div class="help-block with-errors"></div>
-        </div>
-        
-        <div class="form-group">
-          <label for="condition">Vehicle Condition: </label>
-          <div class="radio">
-            <label><input type="radio" name="optradio1" >  Running</label>
+        <div class="controls">
+          <div class="form-group">
+            <label for="year">Vehicle Year: </label>
+            <input type="text" class="form-control" id="year" name="vehicleYear">
+            <div class="help-block with-errors"></div>
           </div>
           
-          <div class="radio">
-            <label><input type="radio" name="optradio2">  Not Running</label>
+          <div class="form-group">
+            <label for="make">Vehicle Make: </label>
+            <input type="text" class="form-control" id="make" name="make">
+            <div class="help-block with-errors"></div>
           </div>
-          <div class="help-block with-errors"></div>
+
+          <div class="form-group">
+            <label for="model">Vehicle Model: </label>
+            <input type="text" class="form-control" id="model" name="model">
+            <div class="help-block with-errors"></div>
+          </div>
+          
+          <div class="form-group">
+            <label for="condition">Vehicle Condition: </label>
+            <div class="radio">
+              <label><input type="radio" name="optradio1" >  Running</label>
+            </div>
+            
+            <div class="radio">
+              <label><input type="radio" name="optradio2">  Not Running</label>
+            </div>
+            <div class="help-block with-errors"></div>
+          </div>
+          
+          <div class="form-group">
+            <label for="location">Vehicle Is Located: </label>
+            <input type="text" class="form-control" id="location" name="location">
+            <div class="help-block with-errors"></div>
+          </div>
+          
+          <div class="form-group">
+            <label for="location">Name: </label>
+            <input type="name" class="form-control" id="name" name="customerName">
+            <div class="help-block with-errors"></div>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address: </label>
+            <input type="email" class="form-control" id="email" name="retEmail">
+            <div class="help-block with-errors"></div>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Contact Phone: </label>
+            <input type="tel" class="form-control" id="phone" name="phoneNum">
+            <div class="help-block with-errors"></div>
+          </div>
+          <br>
+          
+          <button type="submit" class="btn btn-primary">Submit</button>
+          
         </div>
-        
-        <div class="form-group">
-          <label for="location">Vehicle Is Located: </label>
-          <input type="text" class="form-control" id="location" name="location">
-          <div class="help-block with-errors"></div>
-        </div>
-        
-        <div class="form-group">
-          <label for="location">Name: </label>
-          <input type="name" class="form-control" id="name" name="customerName">
-          <div class="help-block with-errors"></div>
-        </div>
-        
-        <div class="form-group">
-          <label for="email">Email Address: </label>
-          <input type="email" class="form-control" id="email" name="retEmail">
-          <div class="help-block with-errors"></div>
-        </div>
-        
-        <div class="form-group">
-          <label for="phone">Contact Phone: </label>
-          <input type="tel" class="form-control" id="phone" name="phoneNum">
-          <div class="help-block with-errors"></div>
-        </div>
-        <br>
-        
-        <button type="submit" class="btn btn-primary">Submit</button>
-        
-    
       </form>
     </div>  
   <br>
