@@ -76,60 +76,61 @@
 			Fill out this Request Quote or Call 813.741.1112<br>
 			We can schedule an appointment and provide Free pick up & towing!<br><br>
 
-		
-			<div class="form-group">
-				<label for="year">Vehicle Year: </label>
-				<input type="text" class="form-control" id="year">
-			</div>
-			
-			<div class="form-group">
-				<label for="make">Vehicle Make: </label>
-				<input type="text" class="form-control" id="make">
-			</div>
+      <form action="scripts/quote_form.php" id="quoteForm" method="POST">
+        <div class="messages"></div>
+        <div class="form-group">
+          <label for="year">Vehicle Year: </label>
+          <input type="text" class="form-control" id="year" name="vehicleYear">
+        </div>
+        
+        <div class="form-group">
+          <label for="make">Vehicle Make: </label>
+          <input type="text" class="form-control" id="make" name="make">
+        </div>
 
-			<div class="form-group">
-				<label for="model">Vehicle Model: </label>
-				<input type="text" class="form-control" id="model">
-			</div>
-			
-			<div class="form-group">
-				<label for="condition">Vehicle Condition: </label>
-				
-				<div class="radio">
-					<label><input type="radio" name="optradio" >  Running</label>
-				</div>
-				
-				<div class="radio">
-					<label><input type="radio" name="optradio">  Not Running</label>
-				</div>
-				
-			</div>
-			
-			<div class="form-group">
-				<label for="location">Vehicle Is Located: </label>
-				<input type="text" class="form-control" id="location">
-			</div>
-			
-			<div class="form-group">
-				<label for="location">Name: </label>
-				<input type="name" class="form-control" id="name">
-			</div>
-			
-			<div class="form-group">
-				<label for="email">Email Address: </label>
-				<input type="email" class="form-control" id="email">
-			</div>
-			
-			<div class="form-group">
-				<label for="phone">Contact Phone: </label>
-				<input type="phone" class="form-control" id="phone">
-			</div>
-			<br>
-			
-			<button type="submit" class="btn btn-primary">Submit</button>
-			
-	
-		</form>
+        <div class="form-group">
+          <label for="model">Vehicle Model: </label>
+          <input type="text" class="form-control" id="model" name="model">
+        </div>
+        
+        <div class="form-group">
+          <label for="condition">Vehicle Condition: </label>
+          
+          <div class="radio">
+            <label><input type="radio" name="optradio1" >  Running</label>
+          </div>
+          
+          <div class="radio">
+            <label><input type="radio" name="optradio2">  Not Running</label>
+          </div>
+          
+        </div>
+        
+        <div class="form-group">
+          <label for="location">Vehicle Is Located: </label>
+          <input type="text" class="form-control" id="location" name="location">
+        </div>
+        
+        <div class="form-group">
+          <label for="location">Name: </label>
+          <input type="name" class="form-control" id="name" name="customerName">
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email Address: </label>
+          <input type="email" class="form-control" id="email" name="retEmail">
+        </div>
+        
+        <div class="form-group">
+          <label for="phone">Contact Phone: </label>
+          <input type="tel" class="form-control" id="phone" name="phoneNum">
+        </div>
+        <br>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+        
+    
+      </form>
     </div>  
   <br>
     <!-- /.container -->
