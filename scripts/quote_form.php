@@ -4,7 +4,7 @@
  */
 
 // an email address that will be in the From field of the email.
-$from = 'QuoteForm@GoGreen.com';
+$from = 'mail.gogreenauto.a2hosted.com';
 
 // an email address that will receive the email with the output of the form
 $sendTo = 'cole3789@gmail.com';
