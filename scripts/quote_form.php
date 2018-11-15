@@ -17,7 +17,7 @@ $subject = 'New Quote Request';
 $fields = array('vehicleYear' => 'Vehicle_Year', 'make' => 'Make', 'model' => 'Model', 'optradio1' => 'Is_Running', 'optradio2' => 'Not_Running', 'location' => 'Location', 'customerName' => 'Customer_Name', 'retEmail' => 'Customer_Email', 'phoneNum' => 'Customer_Phone'); 
 
 // message that will be displayed when everything is OK :)
-$okMessage = 'Contact form successfully submitted. Thank you, we will get back to you soon!';
+$okMessage = 'Quote form successfully submitted. Thank you, we will get back to you soon!';
 
 // If something goes wrong, we will display this message.
 $errorMessage = 'There was an error while submitting the form. Please try again later';
@@ -34,7 +34,7 @@ try
 
     if(count($_POST) == 0) throw new \Exception('Form is empty');
             
-    $emailText = "You have a new message from your contact form\n=============================\n";
+    $emailText = "You have a new message from your quote form\n=============================\n";
 
     foreach ($_POST as $key => $value) {
         // If the field exists in the $fields array, include it in the email 
