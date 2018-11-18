@@ -27,6 +27,7 @@ $errorMessage = 'There was an error while submitting the form. Please try again 
  *  LET'S DO THE SENDING
  */
 
+
 // if you are not debugging and don't need error reporting, turn this off by error_reporting(0);
 error_reporting(E_ALL & ~E_NOTICE);
 
@@ -55,6 +56,8 @@ try
     mail($sendTo, $subject, $emailText, implode("\n", $headers));
 
     $responseArray = array('type' => 'success', 'message' => $okMessage);
+    header("location: quote.html");
+
 }
 catch (\Exception $e)
 {
@@ -66,7 +69,7 @@ catch (\Exception $e)
 if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
     $encoded = json_encode($responseArray);
 
-    header('Content-Type: application/json');
+    header('location: quote.html');
 
     echo $encoded;
 }
@@ -77,7 +80,8 @@ else {
 
 
 // Start of new script
-/*$year = $_POST['vehicleYear'];
+/*
+$year = $_POST['vehicleYear'];
 $make = $_POST['make'];
 $model = $_POST['model'];
 $running = $_POST['optradio1'];
@@ -98,7 +102,11 @@ $email_body = "Name: $name.\n".
               "Model: $model.\n".
               "Running: $running.\n"
               "Not Running: $notRuning.\n";
+$to = "cole3789@gmail.com";
+$headers = "From: $email_from \r\n";
+$headers .= "Reply-To: $email \r\n";
+mail($to,$email_subject,$email_body,$headers);
 
+header("location: quote.html");
 */
-
 ?>
