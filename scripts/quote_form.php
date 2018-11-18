@@ -3,6 +3,7 @@
  *  CONFIGURE EVERYTHING HERE
  */
 
+
 // an email address that will be in the From field of the email.
 $from = 'mail.gogreenauto.a2hosted.com';
 
@@ -73,3 +74,31 @@ if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQ
 else {
     echo $responseArray['message'];
 }
+
+
+// Start of new script
+/*$year = $_POST['vehicleYear'];
+$make = $_POST['make'];
+$model = $_POST['model'];
+$running = $_POST['optradio1'];
+$notRuning = $_POST['optradio2'];
+$location = $_POST['location'];
+$name = $_POST['customerName'];
+$email = $_POST['retEmail'];
+$phone = $_POST['phoneNum'];
+
+$email_from = 'mail.gogreenauto.a2hosted.com';
+$email_subject = 'New Quote Request';
+$email_body = "Name: $name.\n".
+              "Email: $email.\n".
+              "Phone: $phone.\n".
+              "Location: $location.\n".
+              "Year: $year.\n".
+              "Make: $make.\n".
+              "Model: $model.\n".
+              "Running: $running.\n"
+              "Not Running: $notRuning.\n";
+
+*/
+
+?>
