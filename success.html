@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+	<link rel="icon" href="clear.png">
+    <title>Go Green Auto</title>
+
+	<!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/business-frontpage.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"> 
+          <img src="clear.png" width="45" height="30" alt="">  Go Green Auto Recycling
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Hours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="inventory.html">Inventory</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="quote.html">Request Quote</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header with Background Image -->
+    <header class="business-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="display-3 text-center text-white mt-4"></h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <br>
+    <div class="container">
+        <div class="alert-success">
+            <strong>Success! </strong>Your request has been logged.  We will respond as soon as possible.  
+        </div>
+    </div>  
+
+  <!-- Page Content Add FAQ content here-->
+    <br>
+    <div id="valueForm" class="container">
+        <h1>Vehicle Value Form</h1>
+			Fill out this Request Quote or Call 813.741.1112<br>
+			We can schedule an appointment and provide Free pick up & towing!<br><br>
+
+      <!--Form Begins Here-->
+      <form action="scripts/quote_form.php" id="quoteForm" method="POST">
+        <div class="messages"></div>
+        <div class="controls">
+          <div class="form-group">
+            <label for="year">Vehicle Year: </label>
+            <input type="text" class="form-control" id="year" name="vehicleYear">
+            <div class="help-block with-errors"></div>
+          </div>
+          
+          <div class="form-group">
+            <label for="make">Vehicle Make: </label>
+            <input type="text" class="form-control" id="make" name="make">
+            <div class="help-block with-errors"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="model">Vehicle Model: </label>
+            <input type="text" class="form-control" id="model" name="model">
+            <div class="help-block with-errors"></div>
+          </div>
+          
+          <div class="form-group">
+            <label for="condition">Vehicle Condition: </label>
+            <div class="radio">
+              <label><input type="radio" name="optradio1" >  Running</label>
+            </div>
+            
+            <div class="radio">
+              <label><input type="radio" name="optradio2">  Not Running</label>
+            </div>
+            <div class="help-block with-errors"></div>
+          </div>
+          
+          <div class="form-group">
+            <label for="location">Vehicle Is Located: </label>
+            <input type="text" class="form-control" id="location" name="location">
+            <div class="help-block with-errors"></div>
+          </div>
+          
+          <div class="form-group">
+            <label for="location">Name: </label>
+            <input type="name" class="form-control" id="name" name="customerName">
+            <div class="help-block with-errors"></div>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address: </label>
+            <input type="email" class="form-control" id="email" name="retEmail">
+            <div class="help-block with-errors"></div>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Contact Phone: </label>
+            <input type="tel" class="form-control" id="phone" name="phoneNum">
+            <div class="help-block with-errors"></div>
+          </div>
+          <br>
+          
+          <button type="submit" class="btn btn-primary">Submit</button>
+          
+        </div>
+      </form>
+      <!--End of form-->
+    </div>  
+  <br>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Thanks for Visiting our Website!</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <script src="scripts/QuoteForm.js"></script>
+  </body>
+
+</html>
