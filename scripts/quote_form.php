@@ -56,7 +56,12 @@ try
     mail($sendTo, $subject, $emailText, implode("\n", $headers));
 
     $responseArray = array('type' => 'success', 'message' => $okMessage);
-    header("location: quote.html");
+    $encoded = json_encode($responseArray);
+
+    header('Location: ../quote.html');
+
+    echo $encoded;
+
 
 }
 catch (\Exception $e)
@@ -64,12 +69,12 @@ catch (\Exception $e)
     $responseArray = array('type' => 'danger', 'message' => $errorMessage);
 }
 
-
+/*
 // if requested by AJAX request return JSON response
 if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
     $encoded = json_encode($responseArray);
 
-    header('location: quote.html');
+    header('Location: http://gogreenauto.a2hosted.com/quote.html');
 
     echo $encoded;
 }
@@ -78,7 +83,7 @@ else {
     echo $responseArray['message'];
 }
 
-
+*/
 // Start of new script
 /*
 $year = $_POST['vehicleYear'];
