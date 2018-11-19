@@ -58,7 +58,7 @@ try
     $responseArray = array('type' => 'success', 'message' => $okMessage);
     $encoded = json_encode($responseArray);
 
-    header('Location: ../quote.html');
+    header('Location: ../success.html');
 
     echo $encoded;
 
