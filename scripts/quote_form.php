@@ -23,8 +23,8 @@ $okMessage = 'Quote form successfully submitted. Thank you, we will get back to 
 // If something goes wrong, we will display this message.
 $errorMessage = 'There was an error while submitting the form. Please try again later';
 
-/*
- *  LET'S DO THE SENDING
+
+ /*  LET'S DO THE SENDING
  */
 
 
@@ -57,11 +57,12 @@ try
 
     $responseArray = array('type' => 'success', 'message' => $okMessage);
     $encoded = json_encode($responseArray);
-
     header('Location: ../success.html');
 
     echo $encoded;
 
+
+// it went here
 
 }
 catch (\Exception $e)
@@ -74,7 +75,7 @@ catch (\Exception $e)
 if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
     $encoded = json_encode($responseArray);
 
-    header('Location: http://gogreenauto.a2hosted.com/quote.html');
+    header('Location: ../success.html');
 
     echo $encoded;
 }
@@ -82,8 +83,8 @@ if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQ
 else {
     echo $responseArray['message'];
 }
-
 */
+
 // Start of new script
 /*
 $year = $_POST['vehicleYear'];
@@ -112,6 +113,6 @@ $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $email \r\n";
 mail($to,$email_subject,$email_body,$headers);
 
-header("location: quote.html");
+header('Location: ../success.html');
 */
 ?>
